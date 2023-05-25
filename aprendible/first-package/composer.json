@@ -4,6 +4,9 @@
     "require": {
     },
     "autoload": {
+        "psr-4": {
+            "Aprendible\\FirstPackage\\": "src/"
+        },
         "files": ["src/helpers.php"]
     },
     "minimum-stability": "stable"

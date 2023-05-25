@@ -12,10 +12,13 @@
             "dist": {
                 "type": "path",
                 "url": "../aprendible/first-package",
-                "reference": "e64fb1483a61d26a2873ca493b95cd928e1ef9ca"
+                "reference": "aff30cae2d259f97bb40e0cd7cd65688c91325da"
             },
             "type": "library",
             "autoload": {
+                "psr-4": {
+                    "Aprendible\\FirstPackage\\": "src/"
+                },
                 "files": [
                     "src/helpers.php"
                 ]

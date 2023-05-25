@@ -11,6 +11,11 @@
 |
 */
 
+use Aprendible\FirstPackage\Hello;
+
 Route::get('/', function () {
+
+    $hello = new Hello("Ngạn");
+    return $hello->hello();
     return view('welcome');
 });
