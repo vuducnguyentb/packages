@@ -1,0 +1,10 @@
+{
+    "name": "aprendible/first-package",
+    "description": "This is my first package",
+    "require": {
+    },
+    "autoload": {
+        "files": ["src/helpers.php"]
+    },
+    "minimum-stability": "stable"
+}
