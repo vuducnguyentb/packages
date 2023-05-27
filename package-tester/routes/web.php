@@ -14,8 +14,6 @@
 use Aprendible\FirstPackage\Hello;
 
 Route::get('/', function () {
+    return FirstPackage::hello();
 
-    $hello = new Hello("Ngạn");
-    return $hello->hello();
-    return view('welcome');
 });
