@@ -19,3 +19,7 @@ Route::get('/', function () {
     return $hello->hello();
     return view('welcome');
 });
+
+Route::get('/test-provider', function () {
+    return app('some-api')->fetch();
+});
