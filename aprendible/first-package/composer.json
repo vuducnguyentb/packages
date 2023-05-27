@@ -1,13 +1,24 @@
 {
     "name": "aprendible/first-package",
     "description": "This is my first package",
-    "require": {
-    },
     "autoload": {
         "psr-4": {
             "Aprendible\\FirstPackage\\": "src/"
         },
         "files": ["src/helpers.php"]
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "require-dev": {
+        "orchestra/testbench": "^6.27"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aprendible\\FirstPackage\\FirstPackageServiceProvider"
+            ],
+            "aliases": {
+                "FirstPackage":"Aprendible\\FirstPackage\\Facades\\FirstPackage"
+            }
+        }
+    }
 }

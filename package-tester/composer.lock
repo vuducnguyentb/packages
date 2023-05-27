@@ -12,9 +12,22 @@
             "dist": {
                 "type": "path",
                 "url": "../aprendible/first-package",
-                "reference": "aff30cae2d259f97bb40e0cd7cd65688c91325da"
+                "reference": "f7bf4d8bc7281e5d71bed5396d8b50a36107e20a"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.27"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Aprendible\\FirstPackage\\FirstPackageServiceProvider"
+                    ],
+                    "aliases": {
+                        "FirstPackage": "Aprendible\\FirstPackage\\Facades\\FirstPackage"
+                    }
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Aprendible\\FirstPackage\\": "src/"

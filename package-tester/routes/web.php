@@ -11,7 +11,8 @@
 |
 */
 
-use Aprendible\FirstPackage\Hello;
+
+use Aprendible\FirstPackage\Facades\FirstPackage;
 
 Route::get('/', function () {
     return FirstPackage::hello();
