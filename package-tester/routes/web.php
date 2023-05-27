@@ -11,6 +11,7 @@
 |
 */
 
+use App\Facades\SomeApi;
 use Aprendible\FirstPackage\Hello;
 
 Route::get('/', function () {
@@ -22,4 +23,8 @@ Route::get('/', function () {
 
 Route::get('/test-provider', function () {
     return app('some-api')->fetch();
+});
+
+Route::get('/test-facades', function () {
+    return SomeApi::fetch();
 });
