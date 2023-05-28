@@ -4,15 +4,9 @@ namespace Aprendible\FirstPackage;
 
 class Hello
 {
-    private $name;
 
-    public function __construct($name = 'An')
+    public function hello($name="Nguyên")
     {
-        $this->name = $name;
-    }
-
-    public function hello()
-    {
-        return "Hello, {$this->name}";
+        return "Hello, {$name}";
     }
 }
