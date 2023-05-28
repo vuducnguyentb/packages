@@ -1,15 +1,12 @@
 <?php
 
-
-namespace Aprendible\FirstPackage\Tests;
+namespace Aprendible\FirstPackage\Tests\Unit;
 
 use FirstPackage;
+use Aprendible\FirstPackage\Tests\TestCase;
 
 class HelloTest extends TestCase
 {
-
-
-
     /** @test */
     function it_returns_the_message(){
         $this->assertEquals(
