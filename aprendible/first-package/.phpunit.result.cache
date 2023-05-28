@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Aprendible\\FirstPackage\\Tests\\Unit\\HelloTest::it_returns_the_message":3},"times":{"Aprendible\\FirstPackage\\Tests\\Unit\\HelloTest::it_returns_the_message":0.075}}
+{"version":1,"defects":{"Aprendible\\FirstPackage\\Tests\\Unit\\HelloTest::it_returns_the_message":3,"Warning":6},"times":{"Aprendible\\FirstPackage\\Tests\\Unit\\HelloTest::it_returns_the_message":0.006,"Aprendible\\FirstPackage\\Tests\\Unit\\CanGetTheMessageTest::it_returns_the_message":0.078,"Warning":0}}
