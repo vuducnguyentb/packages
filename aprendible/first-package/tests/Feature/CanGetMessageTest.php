@@ -11,4 +11,10 @@ class CanGetMessageTest extends TestCase
         $this->withoutExceptionHandling();
         $this->get('hello-test')->assertSee("Hola Holu");
     }
+
+    /** @test */
+    function can_get_message_through_a_view(){
+        $this->withoutExceptionHandling();
+        $this->get('hello-test')->assertViewIs('first-package::home');
+    }
 }
