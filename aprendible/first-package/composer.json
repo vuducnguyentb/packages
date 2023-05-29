@@ -19,7 +19,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aprendible\\FirstPackage\\FirstPackageServiceProvider"
+                "Aprendible\\FirstPackage\\FirstPackageServiceProvider",
+                "Aprendible\\FirstPackage\\RouteServiceProvider"
             ],
             "aliases": {
                 "FirstPackage":"Aprendible\\FirstPackage\\Facades\\FirstPackage"

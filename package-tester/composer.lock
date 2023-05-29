@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../aprendible/first-package",
-                "reference": "f7bf4d8bc7281e5d71bed5396d8b50a36107e20a"
+                "reference": "6ed8f6407b37fad8da97d809cfc82162ca1db3ee"
             },
             "require-dev": {
                 "orchestra/testbench": "^6.27"
@@ -21,7 +21,8 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Aprendible\\FirstPackage\\FirstPackageServiceProvider"
+                        "Aprendible\\FirstPackage\\FirstPackageServiceProvider",
+                        "Aprendible\\FirstPackage\\RouteServiceProvider"
                     ],
                     "aliases": {
                         "FirstPackage": "Aprendible\\FirstPackage\\Facades\\FirstPackage"
@@ -35,6 +36,11 @@
                 "files": [
                     "src/helpers.php"
                 ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Aprendible\\FirstPackage\\Tests\\": "tests/"
+                }
             },
             "description": "This is my first package",
             "transport-options": {
@@ -947,16 +953,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.66.0",
+            "version": "2.67.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "496712849902241f04902033b0441b269effe001"
+                "reference": "c1001b3bc75039b07f38a79db5237c4c529e04c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/496712849902241f04902033b0441b269effe001",
-                "reference": "496712849902241f04902033b0441b269effe001",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/c1001b3bc75039b07f38a79db5237c4c529e04c8",
+                "reference": "c1001b3bc75039b07f38a79db5237c4c529e04c8",
                 "shasum": ""
             },
             "require": {
@@ -1045,7 +1051,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-29T18:53:47+00:00"
+            "time": "2023-05-25T22:09:47+00:00"
         },
         {
             "name": "nikic/php-parser",

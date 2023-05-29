@@ -6,13 +6,15 @@ namespace Aprendible\FirstPackage\Tests;
 
 use Aprendible\FirstPackage\Facades\FirstPackage;
 use Aprendible\FirstPackage\FirstPackageServiceProvider;
+use Aprendible\FirstPackage\RouteServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
     protected function getPackageProviders($app)
     {
         return[
-            FirstPackageServiceProvider::class
+            FirstPackageServiceProvider::class,
+            RouteServiceProvider::class
         ];
     }
 
