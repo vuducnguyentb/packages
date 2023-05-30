@@ -13,6 +13,11 @@ class FirstPackageServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         $this->publishes([
+            __DIR__.'/../database/migrations'=>database_path('migrations')
+        ],'first-package-migrations');
+
+
+        $this->publishes([
             __DIR__.'/../resources/views'=>resource_path('views/vendor/first-package')
         ],'first-package-views');
 
