@@ -10,6 +10,8 @@ class FirstPackageServiceProvider extends ServiceProvider
     public function boot(){
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'first-package');
 
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
         $this->publishes([
             __DIR__.'/../resources/views'=>resource_path('views/vendor/first-package')
         ],'first-package-views');
