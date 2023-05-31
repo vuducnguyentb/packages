@@ -21,6 +21,10 @@ class FirstPackageServiceProvider extends ServiceProvider
         ],'first-package-lang');
 
         $this->publishes([
+            __DIR__.'/../resources/static'=>public_path('vendor/first-package')
+        ],'first-package-static-assets');
+
+        $this->publishes([
             __DIR__.'/../database/migrations'=>database_path('migrations')
         ],'first-package-migrations');
 
