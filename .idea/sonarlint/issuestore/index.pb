@@ -15,7 +15,5 @@ $aprendible/first-package/phpunit.xml,1\a\1a20e4cadc0b570470641b2649aad967b648f
 ]vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php,d\0\d0991391a113a460734ee19911ca0902ba09e896
 e
 5aprendible/first-package/src/RouteServiceProvider.php,8\8\8825e6a0ec7688a51a969f3492dd0de38c6db87b
-r
-Bpackage-tester/resources/views/vendor/first-package/home.blade.php,a\a\aa74679d59cb15330db16e57f9273086ddc25cdf
 U
 %package-tester/config/filesystems.php,4\9\49809c9bd0da0aaf0c2eb4039da508628e0b7efa

@@ -12,6 +12,14 @@ class FirstPackageServiceProvider extends ServiceProvider
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'first-package');
+
+        $this->loadJsonTranslationsFrom(base_path('resources/lang/json'));
+
+        $this->publishes([
+            __DIR__.'/../resources/lang'=>resource_path('lang')
+        ],'first-package-lang');
+
         $this->publishes([
             __DIR__.'/../database/migrations'=>database_path('migrations')
         ],'first-package-migrations');
